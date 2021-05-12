@@ -4,8 +4,11 @@ Modify the dll file to make windows10 support multi-person login for remote desk
 win10远程桌面破解脚本
 
 #install为破解主程序，程序会从termsrv文件夹读取需要用到的dll文件，格式为：termsrv.dll.版本号
+
 #若后续版本更新可添加相应的文件，并在安装时手动输入版本号
+
 #若脚本提示需要选择是否允许，请输入Y并按回车即可
+
 #在安装时会自动备份dll文件为dll.bak，若已存在dll.bak，会生成带时间的dll.bak避免重名
 
 
