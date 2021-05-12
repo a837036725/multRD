@@ -15,6 +15,7 @@ win10远程桌面破解脚本
 #uninstall为恢复脚本，会将dll.bak替代dll，若有多个版本并想恢复指定版本的dll请手动至C:\Windows\System32重命名termsrv.dll_yyyy_mm_dd_hh_.bak为termsrv.dll.bak
 
 ###请注意：###
+
 ！！！！！termservice服务未必能正常关闭，但不妨碍安装进行，强烈建议安装或复原后进行重启！！！！！
 
 ###测试是成功###
