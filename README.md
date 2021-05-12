@@ -23,6 +23,7 @@ win10远程桌面破解脚本
 用管理员权限打开cmd并添加测试账户（若有可跳过创建）：
 
 net user test password /add
+
 net localgroup "remote desktop users" test /add
 
 打开远程桌面：
