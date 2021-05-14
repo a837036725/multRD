@@ -8,7 +8,7 @@ winver
 :chover
 echo.
 echo  ===============================
-echo         ÇëÑ¡ÔñÏµÍ³°æ±¾
+echo         è¯·é€‰æ‹©ç³»ç»Ÿç‰ˆæœ¬
 echo  ===============================
 echo.
 echo  1. 1809
@@ -23,7 +23,7 @@ echo  5. 202H
 echo.
 echo  6. server2019
 echo.
-echo  7. ÊÖ¶¯ÊäÈë
+echo  7. æ‰‹åŠ¨è¾“å…¥
 echo.
 
 set rtype=
@@ -54,7 +54,7 @@ set num=server2019
 goto main
 )
 if /i "%rtype%"=="7" (
-set /p num= ÇëÊäÈë°æ±¾ºÅ:
+set /p num= è¯·è¾“å…¥ç‰ˆæœ¬å·:
 goto main
 )
 goto chover
@@ -73,14 +73,15 @@ move C:\Windows\System32\termsrv.dll %bakpath%
 ) else if exist .\termsrv\termsrv.dll.%num% (
 move C:\Windows\System32\termsrv.dll %bakpath%
 ) else (
-echo Î´ÔÚtermsrvÎÄ¼ş¼ĞÖĞÕÒµ½ÏàÓ¦µÄdllÎÄ¼ş£¬Çë·ÅÈëÎÄ¼şºóÖØÊÔ
-echo ÎÄ¼ş¸ñÊ½Îª£ºtermsrv.dll.°æ±¾ºÅ
+echo æœªåœ¨termsrvæ–‡ä»¶å¤¹ä¸­æ‰¾åˆ°ç›¸åº”çš„dllæ–‡ä»¶ï¼Œè¯·æ”¾å…¥æ–‡ä»¶åé‡è¯•
+echo æ–‡ä»¶æ ¼å¼ä¸ºï¼štermsrv.dll.ç‰ˆæœ¬å·
 goto end
 )
 
 copy .\termsrv\termsrv.dll.%num% C:\Windows\System32\termsrv.dll
-net start TermService
 
 :end
+net start TermService
+
 pause
 @echo on
