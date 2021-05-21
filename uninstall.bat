@@ -13,7 +13,7 @@ if exist C:\Windows\System32\termsrv.dll.bak (
 move C:\Windows\System32\termsrv.dll.bak C:\Windows\System32\termsrv.dll
 net start termservice
 ) else (
-echo 备份文件丢失，请手动拷贝termsrv.dll至C:\Windows\System32
+echo Backup file loss, please manully copy termsrv.dll to C:\Windows\System32\
 )
 @echo on
 pause
