@@ -17,7 +17,7 @@ goto end
 )
 
 :main
-net stop TermService
+net stop TermService /y
 takeown /f C:\Windows\System32\termsrv.dll
 cacls C:\Windows\System32\termsrv.dll /E /C /G everyone:F
 set bakpath=C:\Windows\System32\termsrv.dll.bak
@@ -32,7 +32,7 @@ move C:\Windows\System32\termsrv.dll %bakpath%
 )
 
 copy .\termsrv\termsrv.dll.%num% C:\Windows\System32\termsrv.dll
-net start TermService
+net start TermService /y
 
 :end
 pause
