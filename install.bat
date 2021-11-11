@@ -34,6 +34,10 @@ move C:\Windows\System32\termsrv.dll %bakpath%
 copy .\termsrv\termsrv.dll.%num% C:\Windows\System32\termsrv.dll
 net start TermService /y
 
+shutdown -r -t 300
+echo Restart computer in 5 mins , If you want to cancel , run : shutdown -a 
+
 :end
+
 pause
 @echo on
